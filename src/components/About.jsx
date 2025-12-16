@@ -1,6 +1,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
-import aboutProfile from "../assets/about-profile.jpg";
+import aboutImg from "../assets/profile.jpg";
+
 
 
 function useScrollFade(ref) {
