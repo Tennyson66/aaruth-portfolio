@@ -1,6 +1,6 @@
 
 import React, { useRef, useEffect, useState } from "react";
-import aboutImg from "../assets/profile.jpg";
+import aboutImg from "../assets/about-profile.jpg";
 
 
 
@@ -26,7 +26,7 @@ const About = () => {
         <div className="about-img-wrap">
           {/* Fallback image if about-profile.jpg is missing */}
           <img
-            src={aboutProfile}
+            src={aboutImg}
             alt="About Me"
             className="about-img"
             onError={e => { e.target.onerror = null; e.target.src = "https://via.placeholder.com/200x200?text=No+Image"; }}
