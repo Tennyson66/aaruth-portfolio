@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
           <nav className="hero-menu-nav" aria-label="Portfolio navigation">
             <ul className="hero-menu-list">
-              <li><a href="/resume.pdf" className="hero-menu-link" target="_blank" rel="noopener noreferrer">VIEW RESUME</a></li>
+              <li><a href="https://drive.google.com/file/d/1-6WuE8D-_h7No9BSnP7yeekOCVsea-gX/view?usp=sharing" className="hero-menu-link" target="_blank" rel="noopener noreferrer">VIEW RESUME</a></li>
               <li className="hero-menu-sep">|</li>
               <li>
                 <a

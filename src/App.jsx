@@ -9,6 +9,7 @@ import NonTechSkillBars from "./components/NonTechSkillBars";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import CertificatesPage from "./components/CertificatesPage";
 import "./styles/main.css";
 
 
@@ -18,10 +19,8 @@ function App() {
       <nav className="top-right-nav">
         <a href="#profile" className="hero-label-nav">About Me</a>
         <a
-          href="/certificates"
+          href="#certificates"
           className="hero-label-nav"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Proof of Progress
         </a>
@@ -35,6 +34,7 @@ function App() {
           <SkillBars />
           <NonTechSkillBars />
           <Projects />
+          <CertificatesPage />
           <Contact />
         </div>
       </div>

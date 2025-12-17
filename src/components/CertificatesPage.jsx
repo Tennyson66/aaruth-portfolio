@@ -1,66 +1,60 @@
 import React from "react";
 import "../styles/main.css";
 
-// Certifications data (exactly as provided)
+// Certifications data with Google Drive links
 const certificates = [
   {
     title: "GenAI Powered Data Analytics Job Simulation",
     issuer: "TATA",
     date: "2025",
-    link: "/certificates/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_68cfbc1994597f858759a63f_1758461723071_completion_certificate.pdf"
+    link: "https://drive.google.com/file/d/1iinzDEN7O-Bbf3_BWYegs8Z11p-fezT3/view?usp=sharing"
   },
   {
     title: "WiFi Hacker Course Certificate",
     issuer: "Udemy",
     date: "2025",
-    link: "/certificates/Wifi-Hacker-course-Certificate.pdf"
-  },
-  {
-    title: "AEC Certificate of Participation",
-    issuer: "AEC",
-    date: "2025",
-    link: "/certificates/AEC Certificate of Participation.pdf"
+    link: "https://drive.google.com/file/d/1X7DRFjxE3_N-DCex8jXJTQ9WmmeKWn36/view?usp=sharing"
   },
   {
     title: "Thoothukudi Hackathon Certificate",
     issuer: "Thoothukudi Hackathon",
     date: "2025",
-    link: "/certificates/KSRIET_AARUTH V P_Certificate.pdf"
+    link: "https://drive.google.com/file/d/15tE5waalvmXjwmNrOZlQtpJK4K4OrtO8/view?usp=sharing"
   },
   {
     title: "Eduskills Certificate",
     issuer: "Eduskills",
     date: "2025",
-    link: "/certificates/Aaruth V P_Certificate.pdf"
+    link: "https://drive.google.com/file/d/10lKm6iFf_To4HjDMIRnvjSBPIQF8CINT/view?usp=sharing"
   },
   {
     title: "Solutions Architecture Job Simulation",
-    issuer: "AWS",
+    issuer: "AWS Forage",
     date: "2025",
-    link: "/certificates/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_68cfbc1994597f858759a63f_1758453404189_completion_certificate.pdf"
+    link: "https://drive.google.com/file/d/1uSouXHPFuPTE4y0JIBhIxgXBteiujTu-/view?usp=sharing"
   },
   {
     title: "Machine Learning – Coursera",
     issuer: "Coursera",
     date: "2025",
-    link: "/certificates/Coursera 3GD8IGC7JDTK.pdf"
+    link: "https://drive.google.com/file/d/1z2IRDzwwLpDIA4Y1Oaq0C2hk7ikphwa9/view?usp=sharing"
   },
   {
     title: "Kali Linux – Coursera",
     issuer: "Coursera",
     date: "2025",
-    link: "/certificates/Coursera NN32Y91C1PMU.pdf"
+    link: "https://drive.google.com/file/d/1JUUpSPB0SiDgYW_dURBJUw1kei42SOZ8/view?usp=sharing"
   },
   {
     title: "Industry 4.0 - NPTEL",
     issuer: "NPTEL",
     date: "2025",
-    link: "/certificates/Introduction to Industry 4.0 and Industrial Internet of Things (2).pdf"
+    link: "https://drive.google.com/file/d/18goXKU6Yba0o5pCV_rVig-4sRMmHfpMV/view?usp=sharing"
   },
 ];
 
 const CertificatesPage = () => (
-  <div className="certificates-page">
+  <div className="certificates-page" id="certificates">
     <h1 className="certificates-title">Certifications</h1>
     <div className="certificates-grid">
       {certificates.map((cert, idx) => (
