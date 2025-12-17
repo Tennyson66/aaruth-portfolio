@@ -60,7 +60,7 @@ const SkillBars = () => {
                   <div className="skillbar-bar-bg">
                     <div
                       className="skillbar-bar-fill"
-                      style={{ width: levelToWidth[skill.level] }}
+                      style={{ '--target-width': levelToWidth[skill.level] }}
                     ></div>
                   </div>
                 </div>

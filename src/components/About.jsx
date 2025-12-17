@@ -22,7 +22,7 @@ const About = () => {
   const visible = useScrollFade(ref);
   return (
     <section ref={ref} className={`about-section fade-in-section${visible ? " visible" : ""}`} id="profile">
-      <div className="about-container" style={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'center', gap: '2.5rem', maxWidth: '1100px', margin: '0 auto', padding: '3rem 0' }}>
+      <div className="about-container">
         <div className="about-img-wrap">
           {/* Fallback image if about-profile.jpg is missing */}
           <img

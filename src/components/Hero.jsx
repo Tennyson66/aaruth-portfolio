@@ -36,10 +36,9 @@ const Hero = () => {
         <div
           ref={refText}
           className={`hero-content${visibleText ? " visible" : ""}`}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
         >
-          <h1 className="hero-name" style={{ textAlign: 'center', width: '100%' }}>AARUTH V P</h1>
-          <div className="hero-subtitle-dark" style={{ textAlign: 'center', width: '100%', color: '#38bdf8', marginBottom: '1.5rem' }}>Ethical Hacker</div>
+          <h1 className="hero-name">AARUTH V P</h1>
+          <div className="hero-subtitle-dark">Ethical Hacker</div>
           <div style={{ color: '#fff', fontSize: '0.78rem', textAlign: 'center', marginBottom: '0.7rem', fontWeight: 400, fontFamily: 'Staatliches, Arial, sans-serif', textTransform: 'uppercase', letterSpacing: '0.08em', lineHeight: 1.2 }}>
             Welcome to my portfolio!<br />
             <span style={{ fontSize: '0.72em', textTransform: 'none', fontFamily: 'Inter, Arial, sans-serif', letterSpacing: '0.01em' }}>

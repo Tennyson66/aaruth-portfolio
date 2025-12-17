@@ -51,7 +51,7 @@ const NonTechSkillBars = () => {
               <div className="nonskillbar-bar-bg">
                 <div
                   className="nonskillbar-bar-fill"
-                  style={{ width: levelToWidth[skill.level] }}
+                  style={{ '--target-width': levelToWidth[skill.level] }}
                 ></div>
               </div>
             </div>
@@ -64,7 +64,7 @@ const NonTechSkillBars = () => {
               <div className="nonskillbar-bar-bg">
                 <div
                   className="nonskillbar-bar-fill"
-                  style={{ width: levelToWidth[skill.level] }}
+                  style={{ '--target-width': levelToWidth[skill.level] }}
                 ></div>
               </div>
             </div>
