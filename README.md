@@ -27,7 +27,7 @@ A modern, responsive portfolio website built with React showcasing cybersecurity
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Tennyson66/aaruth-portfolio.git
+git clone https://github.com/Aaruth24/aaruth-portfolio.git
 cd aaruth-portfolio
 ```
 
