@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import profile from "../assets/profile.jpg";
 
 function useScrollFade(ref) {
@@ -15,6 +16,7 @@ function useScrollFade(ref) {
 }
 
 const Hero = () => {
+  const navigate = useNavigate();
   const refImg = useRef();
   const refText = useRef();
   const visibleImg = useScrollFade(refImg);
@@ -47,14 +49,16 @@ const Hero = () => {
           </div>
           <nav className="hero-menu-nav" aria-label="Portfolio navigation">
             <ul className="hero-menu-list">
-              <li><a href="https://drive.google.com/file/d/1-6WuE8D-_h7No9BSnP7yeekOCVsea-gX/view?usp=sharing" className="hero-menu-link" target="_blank" rel="noopener noreferrer">VIEW RESUME</a></li>
+              <li><a href="https://drive.google.com/file/d/1rzvIpiXymllvwToK1zKe_5ypHu4HwyUG/view?usp=sharing" className="hero-menu-link" target="_blank" rel="noopener noreferrer">VIEW RESUME</a></li>
               <li className="hero-menu-sep">|</li>
               <li>
                 <a
                   href="/certificates"
                   className="hero-menu-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate('/certificates');
+                  }}
                 >
                   PROOF OF PROGRESS
                 </a>

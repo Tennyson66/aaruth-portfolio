@@ -1,4 +1,17 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+
+function useScrollFade(ref) {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0.25 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [ref]);
+  return visible;
+}
 
 const educationData = [
   {
@@ -15,8 +28,11 @@ const educationData = [
   }
 ];
 
-const Education = () => (
-  <section className="education-section" id="education">
+const Education = () => {
+  const ref = useRef();
+  const visible = useScrollFade(ref);
+  return (
+  <section ref={ref} className={`education-section fade-in-up-section${visible ? " visible" : ""}`} id="education">
     <div className="education-container">
       <h2 className="education-heading">
         <span role="img" aria-label="graduation cap" className="education-icon">🎓</span>
@@ -36,6 +52,7 @@ const Education = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default Education;

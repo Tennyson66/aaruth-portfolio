@@ -1,4 +1,17 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+
+function useScrollFade(ref) {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [ref]);
+  return visible;
+}
 
 const projects = [
   {
@@ -20,13 +33,14 @@ const projects = [
     accent: "#0ea5e9"
   },
   {
-    title: "ModusMapping Website",
+    title: "Hostel Outpass System",
     description:
-      "A cybersecurity-focused project designed to analyze and map criminal activities based on modus operandi patterns for better investigation insights.",
-    tech: ["Python", "Data Analysis", "Cybersecurity Concepts"],
-    icon: "🛡️",
-    label: "Cybersecurity Project",
-    accent: "#06b6d4"
+      "A comprehensive hostel management system that streamlines the outpass request and approval process. Students can apply for outpasses digitally, and wardens can approve or reject them efficiently with real-time notifications.",
+    tech: ["React", "Node.js", "MongoDB", "Express"],
+    icon: "🏠",
+    label: "Software Project",
+    accent: "#06b6d4",
+    link: "https://hostel-outpass.netlify.app/login"
   },
 ];
 
@@ -34,8 +48,10 @@ const projects = [
 
 
 const Projects = () => {
+  const ref = useRef();
+  const visible = useScrollFade(ref);
   return (
-    <section id="projects" className="projects-section portfolio-projects-section portfolio-projects-bg">
+    <section ref={ref} id="projects" className={`projects-section portfolio-projects-section portfolio-projects-bg fade-in-up-section${visible ? " visible" : ""}`}>
       <h2 className="portfolio-projects-heading">Projects</h2>
       <div className="projects-grid portfolio-projects-grid">
         {projects.map((project) => (
@@ -53,7 +69,9 @@ const Projects = () => {
                   <span className="project-tech-badge portfolio-tech-badge" key={t}>{t}</span>
                 ))}
               </div>
-              {/* <a className="portfolio-project-link" href="#" tabIndex={-1}>View Details</a> */}
+              {project.link && (
+                <a className="portfolio-project-link" href={project.link} target="_blank" rel="noopener noreferrer">Visit Live Site →</a>
+              )}
             </div>
           </div>
         ))}
