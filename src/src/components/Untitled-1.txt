@@ -1,0 +1,7 @@
+{
+  title: "Your Certificate Title",
+  issuer: "Issuer Name",
+  date: "2025",
+  image: null, // or a thumbnail image if you have one
+  link: "/certificates/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_68cfbc1994597f858759a63f_1758461723071_completion_certificate.pdf"
+}
