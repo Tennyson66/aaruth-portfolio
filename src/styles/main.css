@@ -1716,6 +1716,59 @@ h3 { font-size: 1.2rem; }
   border: 1px solid #e5e7eb;
 }
 
+/* Project Links Container */
+.portfolio-project-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.portfolio-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  background: #0ea5e9;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.portfolio-github-link {
+  background: #24292e;
+}
+
+.portfolio-github-link:hover {
+  background: #1a1e22;
+  border-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.4);
+}
+
+.portfolio-project-link .link-icon {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.portfolio-project-link:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+  border-color: #ffffff;
+}
+
+.portfolio-project-link:active {
+  transform: translateY(0);
+}
+
 /* EXPERIENCE - UNCHANGED */
 .experience-section {
   background: var(--accent);

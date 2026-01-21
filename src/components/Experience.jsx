@@ -16,18 +16,6 @@ function useScrollFade(ref) {
 
 const experienceData = [
   {
-    date: "July 2024 – August 2024",
-    role: "Computer Network Intern",
-    org: "United Soft Solutions",
-    type: "Internship"
-  },
-  {
-    date: "June 2025 – August 2025",
-    role: "LLM Security Intern",
-    org: "Cube AI Solutions",
-    type: "Internship"
-  },
-  {
     date: "Present",
     role: "CTF Player",
     org: "Actively participating in Capture The Flag (CTF) cybersecurity challenges",
@@ -39,6 +27,18 @@ const experienceData = [
     role: "Video Editor",
     org: "Instagram Reels & Shorts",
     type: "Freelance / Content Creation"
+  },
+  {
+    date: "June 2025 – August 2025",
+    role: "LLM Security Intern",
+    org: "Cube AI Solutions",
+    type: "Internship"
+  },
+  {
+    date: "July 2024 – August 2024",
+    role: "Computer Network Intern",
+    org: "United Soft Solutions",
+    type: "Internship"
   }
 ];
 

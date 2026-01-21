@@ -18,19 +18,22 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio website showcasing my skills, experience, and projects with a clean and responsive design.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["HTML", "CSS", "JavaScript", "React"],
     icon: "🌐",
     label: "Personal Project",
-    accent: "#38bdf8"
+    accent: "#38bdf8",
+    github: "https://github.com/Aaruth24/aaruth-portfolio"
   },
   {
-    title: "Movie Recommendation Website",
+    title: "Mood-Based Movie Recommendation",
     description:
-      "A movie recommendation website that suggests movies based on user interests and categories, focused on usability and clean UI.",
-    tech: ["HTML", "CSS", "JavaScript"],
+      "An intelligent movie recommendation system that suggests movies based on your current mood and preferences, featuring an intuitive interface and extensive movie database.",
+    tech: ["React", "JavaScript", "CSS", "API Integration"],
     icon: "🎬",
     label: "Personal Project",
-    accent: "#0ea5e9"
+    accent: "#0ea5e9",
+    link: "https://mood-based-movies.netlify.app",
+    github: "https://github.com/Aaruth24/mood-based-movies"
   },
   {
     title: "Hostel Outpass System",
@@ -40,7 +43,8 @@ const projects = [
     icon: "🏠",
     label: "Software Project",
     accent: "#06b6d4",
-    link: "https://hostel-outpass.netlify.app/login"
+    link: "https://hostel-outpass.netlify.app/",
+    github: "https://github.com/Aaruth24/Host3l-0utpass"
   },
 ];
 
@@ -69,9 +73,18 @@ const Projects = () => {
                   <span className="project-tech-badge portfolio-tech-badge" key={t}>{t}</span>
                 ))}
               </div>
-              {project.link && (
-                <a className="portfolio-project-link" href={project.link} target="_blank" rel="noopener noreferrer">Visit Live Site →</a>
-              )}
+              <div className="portfolio-project-links">
+                {project.link && (
+                  <a className="portfolio-project-link" href={project.link} target="_blank" rel="noopener noreferrer">
+                    <span className="link-icon">🔗</span> Live Site
+                  </a>
+                )}
+                {project.github && (
+                  <a className="portfolio-project-link portfolio-github-link" href={project.github} target="_blank" rel="noopener noreferrer">
+                    <span className="link-icon">💻</span> GitHub
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

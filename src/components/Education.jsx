@@ -15,16 +15,16 @@ function useScrollFade(ref) {
 
 const educationData = [
   {
-    year: "2023",
-    degree: "HIGHER SECONDARY",
-    institution: "Sri Sathya Sai Matric Higher Secondary School",
-    location: "Chithode, Erode, Tamil Nadu"
-  },
-  {
     year: "Present",
     degree: "B.E CSE (Cyber Security)",
     institution: "K S R Institute for Engineering and Technology",
     location: "K S R Kalvi Nagar, Tiruchengode, Tamil Nadu"
+  },
+  {
+    year: "2023",
+    degree: "HIGHER SECONDARY",
+    institution: "Sri Sathya Sai Matric Higher Secondary School",
+    location: "Chithode, Erode, Tamil Nadu"
   }
 ];
 
